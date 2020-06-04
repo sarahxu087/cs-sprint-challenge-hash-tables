@@ -2,7 +2,13 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    negative={i:i<0 for i in a}
+    result = []
+    for i in a:
+        if i >0 and(-i in negative):
+                result.append(i)
+    
+
 
     return result
 
